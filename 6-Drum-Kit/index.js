@@ -1,5 +1,5 @@
 //when vutton clicked
-var buttons = document.querySelectorAll("button"); //selecting the button tag from  html even .drum class can be used.
+var buttons = document.querySelectorAll("button"); //selecting the button tag from  html.(.drum class can also be used.)
 for (i = 0; i < buttons.length; i++) { //iterating through all the 7 buttons.
   buttons[i].addEventListener("click", handleClick); //what happens when clicked on those buttons
 
@@ -15,7 +15,7 @@ function handleClick() {
 
 function keyBoard(){
   // console.log(event);
-  var clickedKey=event.key;   //event gives info which key is pressed.if "w" is pressed , then clcikedKey is "w" and  make sound acc.
+  var clickedKey=event.key;   //event gives info of which key is pressed.if "w" is pressed , then clcikedKey is "w" and  make sound acc.
   clickedKey=clickedKey.toLowerCase();
   makeSound(clickedKey);
   buttonAnimation(clickedKey);
@@ -67,5 +67,4 @@ setTimeout(function (){
 },100)
 
 }
-  //var audio=new Audio("sounds/tom-1.mp3");
-  //audio.play();
+  
